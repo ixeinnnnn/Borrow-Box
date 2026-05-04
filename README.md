@@ -593,9 +593,7 @@ git commit -m "feat: describe your change"
 git push origin feature/your-feature-name</pre>
   <p style="font-size:13px;color:var(--muted);">Follow Java naming conventions, keep methods under 30 lines, and add Javadoc comments to all public methods.</p>
 
-  <!-- Support -->
-  <h2>📬 Support</h2>
-  <p style="font-size:13px;color:var(--muted);">Email: <a href="mailto:support@barangay-system.com">support@barangay-system.com</a> · GitHub Issues: open a ticket in the repository</p>
+ 
 
   <!-- Footer -->
   <div class="footer">
