@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">Barrowing_system</string>
+    
+    <!-- Login Activity -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_to_continue">Sign in to your account to continue</string>
+    <string name="email_address">Email Address</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="continue_as_admin">Continue as Admin</string>
+    <string name="dont_have_account">Don\'t have an account? </string>
+    <string name="register">Register</string>
+    
+    <!-- Admin Login Activity -->
+    <string name="admin_login">Admin Login</string>
+    <string name="admin_email">Admin Email</string>
+    <string name="admin_password">Admin Password</string>
+    <string name="admin_sign_in">Admin Sign In</string>
+    <string name="secure_admin_access">Secure Admin Access</string>
+    <string name="enter_admin_credentials">Enter admin credentials to continue</string>
+    <string name="back_to_user_login">← Back to User Login</string>
+    
+    <!-- Register Activity -->
+    <string name="create_account">Create Account</string>
+    <string name="join_community">Join our community today</string>
+    <string name="fill_details_register">Fill in your details to register</string>
+    <string name="full_name">Full Name</string>
+    <string name="enter_full_name">Enter your full name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm_your_password">Confirm your password</string>
+    <string name="create_password">Create password</string>
+    <string name="already_have_account">← Already have an account? Sign In</string>
+    
+    <!-- Forgot Password Activity -->
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_password_instructions">Enter your email address and we\'ll send you a link to reset your password</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="sending_reset_link">Sending...</string>
+    <string name="back_to_sign_in">← Back to Sign In</string>
+    <string name="forgot_password_background">Forgot Password Background</string>
+    <string name="reset_link_sent">Check your inbox. We sent a reset link to %s</string>
+    <string name="password_reset_success">Your password has been updated.</string>
+    <string name="resetting_password">Resetting...</string>
+    
+    <!-- Admin Dashboard -->
+    <string name="welcome_admin">Welcome, Admin</string>
+    <string name="manage_barangay_system">Manage your barangay system</string>
+    <string name="total_users">Total Users</string>
+    <string name="active_items">Active Items</string>
+    <string name="manage_users">Manage Users</string>
+    <string name="manage_items">Manage Items</string>
+    <string name="view_reports">View Reports</string>
+    <string name="logout">Logout</string>
+    
+    <!-- User Dashboard -->
+    <string name="welcome_user">Welcome, User</string>
+    <string name="browse_borrow_items">Browse and borrow community items</string>
+    <string name="browse_items">Browse Items</string>
+    <string name="my_borrowings">My Borrowings</string>
+    <string name="recent_items">Recent Items</string>
+    <string name="latest_items_available">Latest items available for borrowing</string>
+    <string name="view_all_items">View All Items</string>
+    <string name="my_profile">My Profile</string>
+    
+    <!-- Error Messages -->
+    <string name="email_required">Email is required</string>
+    <string name="valid_email">Enter a valid email address</string>
+    <string name="password_required">Password is required</string>
+    <string name="password_min_length">Password must be 12-16 characters</string>
+    <string name="password_max_length">Password must be 12-16 characters</string>
+    <string name="password_require_special">Password must contain at least 1 special character</string>
+    <string name="password_require_number">Password must contain at least 1 number</string>
+    <string name="password_require_uppercase">Password must contain at least 1 uppercase letter</string>
+    <string name="password_require_lowercase">Password must contain at least 1 lowercase letter</string>
+    <string name="password_weak">Password is too weak. Please follow the requirements.</string>
+    
+    <!-- Registration Fields -->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="age">Age</string>
+    <string name="complete_address">Complete Address</string>
+    <string name="enter_first_name">Enter your first name</string>
+    <string name="enter_last_name">Enter your last name</string>
+    <string name="enter_age">Enter your age</string>
+    <string name="enter_address">Enter your complete address</string>
+    <string name="first_name_required">First name is required</string>
+    <string name="last_name_required">Last name is required</string>
+    <string name="age_required">Age is required</string>
+    <string name="address_required">Address is required</string>
+    <string name="invalid_age">Please enter a valid age (18-100)</string>
+    
+    <!-- Password Strength -->
+    <string name="password_strength_weak">Weak</string>
+    <string name="password_strength_medium">Medium</string>
+    <string name="password_strength_strong">Strong</string>
+    <string name="password_strength_indicator">Password Strength: %s</string>
+    <string name="name_required">Full name is required</string>
+    <string name="name_min_length">Full name must be at least 3 characters</string>
+    <string name="confirm_password_required">Please confirm your password</string>
+    <string name="passwords_not_match">Passwords do not match</string>
+    <string name="admin_email_required">Admin email is required</string>
+    <string name="admin_password_required">Admin password is required</string>
+    
+    <!-- Success Messages -->
+    <string name="login_successful">Login successful</string>
+    <string name="registration_successful">Registration successful</string>
+    <string name="signing_in">Signing in...</string>
+    <string name="login_failed">Login failed: %s</string>
+    <string name="password_reset_sent">Password reset link sent to %s</string>
+    <string name="password_reset_failed">Failed to send reset link: %s</string>
+    <string name="admin_login_successful">Admin login successful</string>
+    <string name="logout_successful">Logged out successfully</string>
+    
+    <!-- Error Messages -->
+    <string name="registration_failed">Registration failed: %s</string>
+    <string name="invalid_admin_credentials">Invalid admin credentials</string>
+    <string name="failed_to_load_users">Failed to load users</string>
+    <string name="failed_to_load_items">Failed to load items</string>
+    <string name="failed_to_load_borrowing_data">Failed to load borrowing data</string>
+    <string name="failed_to_load_recent_items">Failed to load recent items</string>
+    
+    <!-- Loading Messages -->
+    <string name="creating_account">Creating account...</string>
+    <string name="admin_signing_in">Admin signing in...</string>
+    
+    <!-- Coming Soon Messages -->
+    <string name="google_signin_soon">Google Sign-In coming soon</string>
+    <string name="manage_users_soon">Manage Users - Coming Soon</string>
+    <string name="manage_items_soon">Manage Items - Coming Soon</string>
+    <string name="view_reports_soon">View Reports - Coming Soon</string>
+    <string name="browse_items_soon">Browse Items - Coming Soon</string>
+    <string name="my_borrowings_soon">My Borrowings - Coming Soon</string>
+    <string name="profile_soon">Profile - Coming Soon</string>
+    <string name="view_all_items_soon">View All Items - Coming Soon</string>
+    
+    <!-- Content Descriptions -->
+    <string name="barangay_hall">Barangay Hall</string>
+    <string name="barangay_logo">Barangay Logo</string>
+    <string name="admin_logo">Admin Logo</string>
+    <string name="email_icon">Email icon</string>
+    <string name="lock_icon">Lock icon</string>
+    <string name="toggle_password_visibility">Toggle password visibility</string>
+    <string name="google_logo">Google logo</string>
+    <string name="admin_icon">Admin icon</string>
+    <string name="user_icon">User icon</string>
+    <string name="arrow">Arrow</string>
+    <string name="email_icon_alt">Email Icon</string>
+    <string name="person_icon">Person icon</string>
+    <string name="calendar_icon">Calendar icon</string>
+    <string name="location_icon">Location icon</string>
+    <string name="eye_icon">Eye icon</string>
+    <string name="eye_off_icon">Eye off icon</string>
+    <string name="manage_users_alt">Manage Users</string>
+    <string name="manage_items_alt">Manage Items</string>
+    <string name="view_reports_alt">View Reports</string>
+    <string name="profile_alt">Profile</string>
+    <string name="browse_items_alt">Browse Items</string>
+    <string name="my_borrowings_alt">My Borrowings</string>
+    
+    <!-- Default admin credentials (for testing) -->
+    <string name="default_admin_email">admin@barangay.com</string>
+    <string name="default_admin_password">Admin@123</string>
+</resources>

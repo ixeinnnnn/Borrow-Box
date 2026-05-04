@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/item_resident.xml -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:gravity="center_vertical">
+
+        <!-- Avatar Circle -->
+        <FrameLayout
+            android:id="@+id/resAvatarBadge"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/badge_blue">
+
+            <TextView
+                android:id="@+id/tvResInitial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="J"
+                android:textColor="@color/badge_blue_icon"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold" />
+        </FrameLayout>
+
+        <!-- Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juan dela Cruz"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_bold" />
+
+            <TextView
+                android:id="@+id/tvResEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="juan@email.com"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_regular" />
+
+            <TextView
+                android:id="@+id/tvResTotalBorrows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="5 total borrows"
+                android:textColor="@color/hint_color"
+                android:textSize="11sp"
+                android:fontFamily="@font/poppins_regular" />
+        </LinearLayout>
+
+        <!-- Status + Suspend/Unsuspend -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/tvResStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/badge_status_done"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Active"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:fontFamily="@font/poppins_medium" />
+
+            <TextView
+                android:id="@+id/tvToggleStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Suspend"
+                android:textColor="@color/red_overdue"
+                android:textSize="11sp"
+                android:fontFamily="@font/poppins_medium"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

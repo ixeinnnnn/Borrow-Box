@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/item_select_resource.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="6dp"
+    android:background="@drawable/card_rounded_white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Item thumbnail -->
+    <ImageView
+        android:id="@+id/ivSelectItemImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/badge_blue"
+        android:contentDescription="Resource image" />
+
+    <!-- Name + category + availability -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSelectItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold" />
+
+        <TextView
+            android:id="@+id/tvSelectItemInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Category · 10 available"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_regular" />
+    </LinearLayout>
+
+    <!-- Checkmark (shown when selected) -->
+    <ImageView
+        android:id="@+id/ivCheckmark"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_check_circle"
+        android:contentDescription="Selected"
+        android:visibility="gone"
+        app:tint="@color/white" />
+
+</LinearLayout>

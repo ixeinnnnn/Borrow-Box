@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/card_stat.xml - Reusable statistics card -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Icon Badge -->
+        <FrameLayout
+            android:id="@+id/statIconBadge"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/badge_yellow">
+
+            <ImageView
+                android:id="@+id/statIcon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_clock"
+                android:contentDescription="Stat icon" />
+        </FrameLayout>
+
+        <!-- Count -->
+        <TextView
+            android:id="@+id/statCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="@color/text_primary"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold" />
+
+        <!-- Label -->
+        <TextView
+            android:id="@+id/statLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Label"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_regular" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

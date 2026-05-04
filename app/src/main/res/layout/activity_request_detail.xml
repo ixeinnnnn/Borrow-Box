@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_request_detail.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_light">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:title="Request Detail"
+        app:titleTextAppearance="@style/ToolbarTitle"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:elevation="2dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Requester Info Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Requester Information"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="11sp"
+                        android:textAllCaps="true"
+                        android:letterSpacing="0.1"
+                        android:fontFamily="@font/poppins_medium" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/badge_blue">
+
+                            <TextView
+                                android:id="@+id/tvDetailInitial"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="J"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/poppins_bold" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="14dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvDetailName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Juan dela Cruz"
+                                android:textColor="@color/text_primary"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/poppins_bold" />
+
+                            <TextView
+                                android:id="@+id/tvDetailEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="juan@email.com"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/poppins_regular" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvDetailStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/badge_status_viewed"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:text="Viewed"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:fontFamily="@font/poppins_medium" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Request Details Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Request Details"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="11sp"
+                        android:textAllCaps="true"
+                        android:letterSpacing="0.1"
+                        android:fontFamily="@font/poppins_medium" />
+
+                    <!-- Item Name Row -->
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+                        <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+                            android:text="Item" android:textColor="@color/text_secondary"
+                            android:textSize="13sp" android:fontFamily="@font/poppins_regular"/>
+                        <TextView android:id="@+id/tvDetailItem"
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Folding Table"
+                            android:textColor="@color/text_primary" android:textSize="13sp"
+                            android:textStyle="bold" android:fontFamily="@font/poppins_medium"/>
+                    </LinearLayout>
+
+                    <!-- Quantity Row -->
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+                        <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+                            android:text="Quantity" android:textColor="@color/text_secondary"
+                            android:textSize="13sp" android:fontFamily="@font/poppins_regular"/>
+                        <TextView android:id="@+id/tvDetailQty"
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="2"
+                            android:textColor="@color/text_primary" android:textSize="13sp"
+                            android:textStyle="bold" android:fontFamily="@font/poppins_medium"/>
+                    </LinearLayout>
+
+                    <!-- Borrow Date Row -->
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+                        <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+                            android:text="Borrow Date" android:textColor="@color/text_secondary"
+                            android:textSize="13sp" android:fontFamily="@font/poppins_regular"/>
+                        <TextView android:id="@+id/tvDetailBorrowDate"
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Apr 22, 2026"
+                            android:textColor="@color/text_primary" android:textSize="13sp"
+                            android:fontFamily="@font/poppins_medium"/>
+                    </LinearLayout>
+
+                    <!-- Return Date Row -->
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+                        <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+                            android:text="Return Date" android:textColor="@color/text_secondary"
+                            android:textSize="13sp" android:fontFamily="@font/poppins_regular"/>
+                        <TextView android:id="@+id/tvDetailReturnDate"
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Apr 25, 2026"
+                            android:textColor="@color/text_primary" android:textSize="13sp"
+                            android:fontFamily="@font/poppins_medium"/>
+                    </LinearLayout>
+
+                    <!-- Purpose Row -->
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+                        <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+                            android:text="Purpose" android:textColor="@color/text_secondary"
+                            android:textSize="13sp" android:fontFamily="@font/poppins_regular"/>
+                        <TextView android:id="@+id/tvDetailPurpose"
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Community event"
+                            android:textColor="@color/text_primary" android:textSize="13sp"
+                            android:fontFamily="@font/poppins_medium"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Action Button -->
+            <Button
+                android:id="@+id/btnMarkDone"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_green_rounded"
+                android:text="Mark as Done"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_bold" />
+
+            <!-- Mark as Returned Button -->
+            <Button
+                android:id="@+id/btnMarkReturned"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn_primary_rounded"
+                android:text="Mark as Returned"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

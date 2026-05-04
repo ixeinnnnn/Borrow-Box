@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".BarrowingApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Barrowing_system">
+
+        <!-- Main Login Activity (New with Firebase) -->
+        <activity android:name=".LoginActivityNew"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+
+        <!-- Registration Activity (New with Firebase) -->
+        <activity android:name=".RegisterActivityNew" />
+
+        <!-- Admin Login Activity (Updated with Firebase) -->
+        <activity android:name=".AdminLoginActivity" />
+
+        <!-- Forgot Password Activity (Updated with Firebase) -->
+        <activity android:name=".ForgotPasswordActivity" />
+
+        <!-- Reset Password Activity with Deep Link -->
+        <activity android:name=".ResetPasswordActivity"
+            android:exported="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https"
+                    android:host="juanezaian-58a6b03c.firebaseapp.com"
+                    android:pathPrefix="/__/auth/action" />
+            </intent-filter>
+        </activity>
+
+        <!-- Dashboard Activities -->
+        <activity android:name=".UserDashboardActivity" />
+        <activity android:name=".AdminDashboardActivity" />
+
+        <!-- User Activities -->
+        <activity android:name=".BorrowActivity" />
+        <activity android:name=".NewBorrowRequestActivity" />
+
+        <!-- admin activities -->
+        <activity android:name=".RequestsActivity" />
+        <activity android:name=".RequestDetailActivity" />
+        <activity android:name=".InventoryActivity" />
+        <activity android:name=".ResidentsActivity" />
+        <activity android:name=".PenaltiesActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".SettingsActivity" />
+
+        <!-- Old Activities (Kept for reference, can be removed) -->
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+
+    </application>
+
+</manifest>

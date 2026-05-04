@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Firebase Configuration -->
+    <string name="firebase_database_url" translatable="false">
+        https://juanezaian-58a6b03c-default-rtdb.asia-southeast1.firebasedatabase.app/
+    </string>
+    
+    <!-- Firebase Project Info -->
+    <string name="firebase_project_id" translatable="false">juanezaian-58a6b03c</string>
+    <string name="firebase_storage_bucket" translatable="false">juanezaian-58a6b03c.firebasestorage.app</string>
+</resources>
